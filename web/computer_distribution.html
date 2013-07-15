@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample app</title>
+    <link rel="stylesheet" href="computer_distribution.css">
+
+    <!-- import the compdist element -->
+    <link rel="import" href="xcompdist.html">
+  </head>
+  <body>
+    <h1>Computer distribution</h1>
+
+    <p>Hello world from Dart!</p>
+
+    <!-- Insert the CompDistComponent, implemented in xcompdist.html & xcompdist.dart -->
+    <div is="x-comp-dist" id="comp_dist"></div>
+
+    <script type="application/dart" src="computer_distribution.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

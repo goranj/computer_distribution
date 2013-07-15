@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  </head>
+
+  <body>
+    <element name="x-comp-dist" constructor="CompDistComponent" extends="div">
+        <template>
+
+<!--          <div>
+            <p>Enter a milestone</p>
+
+            <input type="text" name="newMilestoneName" bind-value="newMilestoneName">
+            <input type="date" name="newMilestoneDate" bind-value="newMilestoneDate">
+            <input type="time" name="newMilestoneTime" bind-value="newMilestoneTime">
+            <button on-click="addMilestone()" id="addbutton">+</button>
+
+            <ul>
+              <template if='appObject.hazMilestones'>
+                <template repeat="milestone in appObject.milestones">
+                  <li>
+                    <x-milestone milestone="{{milestone}}">
+                    </x-milestone>
+                  </li>
+                </template>
+              </template>
+            </ul>
+          </div>
+          <div>
+            <button on-click="clear()" id="clearbutton">Clear</button>
+            <button on-click="loadMilestones()" id="loadbutton">Load</button>
+            <p style="color:red"> {{errorMsg}} </p>
+          </div> -->
+          <button on-click="createDb()">Create DB</button>
+          <button on-click="deleteDb()">Delete DB</button>
+          <p style="color:red"> {{errorMsg}} </p>
+
+          <template repeat="student in appObject.students">
+            <li>{{student}}</li>
+          </template>
+
+          <template repeat="computer in appObject.computers">
+            <li>{{computer}}</li>
+          </template>
+        </template>
+
+      <script type="application/dart" src="xcompdist.dart"></script>
+    </element>
+  </body>
+</html>
